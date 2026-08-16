@@ -14,24 +14,10 @@ See [FEATURES.md](FEATURES.md) for details.
 
 
 
-
-
-## Requirements
-
-* [Node.JS](https://nodejs.dev/en/)
-* [npm](https://www.npmjs.com/)
-* [OpenAI API Account](https://openai.com/blog/openai-api)
-  * Note: GPT-4 API access is currently accessible to those who have made at least [one successful payment](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4) through the OpenAI developer platform.
-
-
 ## Setup
 
-1. Clone the repository.
-```
-git clone https://github.com/elebitzero/openai-react-chat.git
-```
-2. Copy [env.json](src/env.json)  to `local.env.json` and change 'your-api-key-here' to your [OpenAI Key](https://platform.openai.com/account/api-keys)
-3. Build & Run the web server
+1. Copy [env.json](src/env.json)  to `local.env.json` and change 'your-api-key-here' to your [OpenAI Key](https://platform.openai.com/account/api-keys)
+2. Build & Run the web server
 ```
 npm install
 npm run start
