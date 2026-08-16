@@ -27,28 +27,29 @@
     "react-i18next": "^15.6.1",
     "react-loader-spinner": "^6.1.6",
     "react-markdown": "^10.1.0",
-    "react-router-dom": "^7.7.1",
+    "react-router": "^8.3.0",
+    "react-router-dom": "^7.18.2",
     "react-select": "^5.10.2",
-    "react-syntax-highlighter": "^15.6.1",
+    "react-syntax-highlighter": "^16.1.1",
     "react-toastify": "^11.0.5",
     "rehype-katex": "^7.0.1",
     "remark-gfm": "^4.0.1",
     "remark-math": "^6.0.0",
     "tailwindcss": "^4.1.11",
-    "typescript": "^5.8.3",
     "unist-util-visit": "^5.0.0"
   },
   "overrides": {
-    "typescript": "^5.8.3",
     "react-loader-spinner": {
       "react": "^18 || ^19",
       "react-dom": "^18 || ^19"
     }
   },
   "scripts": {
+    "dev": "vite",
     "build:css": "postcss src/index.css -o src/tailwind.css",
+    "sync:js-assets": "node scripts/sync-js-assets.mjs",
     "start": "npm run build:css && vite",
-    "build": "npm run build:css && tsc && vite build",
+    "build": "npm run build:css && vite build",
     "serve": "vite preview"
   },
   "eslintConfig": {
@@ -73,16 +74,8 @@
     "@testing-library/jest-dom": "^6.6.4",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
-    "@types/hast": "^3.0.4",
-    "@types/jest": "^30.0.0",
-    "@types/node": "^24.0.15",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@types/react-syntax-highlighter": "^15.5.13",
     "@vitejs/plugin-react": "^4.7.0",
-    "cypress": "^14.5.3",
     "vite": "^7.0.6",
-    "vite-plugin-svgr": "^4.3.0",
-    "vite-tsconfig-paths": "^5.1.4"
+    "vite-plugin-svgr": "^4.3.0"
   }
 }
